@@ -1,0 +1,13 @@
+.visualize-box{
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(5px)
+}
+
+.visualize-dates{
+    align-items: center;
+}

@@ -1,0 +1,64 @@
+/* src/styles/Home.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+
+.home {
+  display: flex;
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+.home-container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+   margin: 0 auto;
+}
+
+.home-container h1 {
+  font-size: 2rem;
+  color: #333;
+  opacity: 0;
+  animation: slide-in 1s forwards;
+}
+.home-container h2 {
+  font-size: 1.5rem;
+  color: #333;
+  opacity: 0;
+  animation: slide-in 1s forwards 0.5s;
+}
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.home-container button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.home-container button:hover {
+  background-color: #0056b3;
+}
